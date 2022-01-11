@@ -1,0 +1,1 @@
+# sb-decorator-issue
