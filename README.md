@@ -1,21 +1,13 @@
-# sb-decorator-issue
-
 ## Steps
 yarn install
 yarn storybook
 
 ## Changes 
-Based on sb@next additional code got added:
+Based on sb@next init additional code got added:
 
 ```
-// .storybook/previes.js
-const withStory = (Story, context) => {
-    return (
-        <Story {...context} />
-    );
-};
-
-export const decorators = [withStory]; 
+// .storybook/preview.js
+export const decorators = [(Story) => <Story />];
 ```
 
 ```

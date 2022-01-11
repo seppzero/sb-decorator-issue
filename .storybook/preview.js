@@ -8,10 +8,4 @@ export const parameters = {
   },
 }
 
-const withLocaleProvider = (Story, context) => {
-    return (
-        <Story {...context} />
-    );
-};
-
-export const decorators = [withLocaleProvider];
+export const decorators = [(Story) => <Story />];
